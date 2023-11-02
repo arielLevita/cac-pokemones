@@ -41,6 +41,7 @@ export const Cards = () => {
     // Ejecutar la carga de pokemones y actualizar en función del limitador de cantidad.
     useEffect(() => {
         getPokemones();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [totalPokemones]);
 
     return (
