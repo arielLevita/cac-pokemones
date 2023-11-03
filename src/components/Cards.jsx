@@ -44,15 +44,17 @@ export const Cards = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [totalPokemones]);
 
+    console.log(pokemones)
+
     return (
-        <div>
-            <div className="d-flex flex-wrap">
+        <div className='min-vh-100'>
+            <div className="d-flex flex-wrap justify-content-center">
                 {pokemones.map((pokemon) => (
                     <SingleCard key={pokemon.id} pokemon={pokemon} />
                 ))}
             </div>
             <div className='d-flex justify-content-center'>
-                <button onClick={handleAddMore} className='btn btn-primary m-5'>add more</button>
+                <button onClick={handleAddMore} className='btn border border-black m-5'>+ POKEMONES</button>
             </div>
         </div>
     );
