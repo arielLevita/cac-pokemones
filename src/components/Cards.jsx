@@ -54,7 +54,9 @@ export const Cards = () => {
                 ))}
             </div>
             <div className='d-flex justify-content-center'>
-                <button onClick={handleAddMore} className='btn border border-black m-5'>+ POKEMONES</button>
+                <button onClick={handleAddMore} className='btn border border-black fw-semibold m-5'>
+                    <i class="bi bi-chevron-double-down text-dark fw-semibold"></i> ADD MORE
+                </button>
             </div>
         </div>
     );

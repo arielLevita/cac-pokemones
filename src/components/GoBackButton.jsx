@@ -13,7 +13,7 @@ const GoBackButton = () => {
     return (
         <button
             onClick={handleGoBack}
-            className="btn border border-dark my-3"
+            className="btn border border-dark shadow my-3"
         >
             Go Back
         </button>
